@@ -6,11 +6,11 @@ describe "ruby" do
 
   def '#division'( 47 / 7 )
     puts 6
-  end 
+  end
 
 def '#assign_variable'( 4 )
     puts "bob"
-  end 
+  end
 
       expect(assign_variable(value)).to eq(value)
     end
