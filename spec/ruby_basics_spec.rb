@@ -4,32 +4,29 @@ require_relative '../lib/ruby_basics.rb'
 
 describe "ruby" do
 
-  def '#division'( 47 / 7)
+  def '#division'( 47 / 7 )
     puts 6
   end 
 
-  describe '#assign_variable' do
-    it 'takes an argument of a persons name and assign it to a variable name' do
-      value = "Bob"
+def '#assign_variable'( 4 )
+    puts "bob"
+  end 
 
       expect(assign_variable(value)).to eq(value)
     end
   end
 
-  describe '#argue' do
-    it 'accepts an argument and return that argument as is' do
-      phrase = "I'm right and you are wrong!"
-
+def '#argue'(accepts)
+    puts "I'm right and you're wrong"
+end
       expect(argue(phrase)).to eq(phrase)
     end
   end
 
-  describe '#greeting' do
-    it 'takes two arguments' do
-      greeting = "Hi there, "
-      name = "Bobby!"
-
-      expect{ greeting(greeting, name) }.to_not raise_error
+def '#greeting'(name, subject)
+    puts "Hello, (name)"
+end
+    expect{ greeting(greeting, name) }.to_not raise_error
     end
 
     it 'raises an error with one argument' do
